@@ -1,6 +1,8 @@
 import './App.css';
-import HomePage from './components/templates/HomePage';
+import HomePage from './components/HomePage';
 import CryptoContextProvider from './context/CryptoContextProvider';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (

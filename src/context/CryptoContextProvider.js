@@ -1,7 +1,7 @@
 import React from 'react';
 import { createContext , useState , useEffect } from 'react';
 
-import { getCrypto } from '../tools/functions';
+import { getCrypto } from '../components/services/cryptoApi';
 
 export const CryptosContext = createContext()
 
