@@ -1,0 +1,7 @@
+.loadnigGif {
+    width: 25% !important;
+}
+.gifContainer {
+    display: flex;
+    justify-content: center;
+}
