@@ -1,13 +1,16 @@
 import React from 'react';
 import styles from '../../styles/Toolbar.module.css'
 
-const Toolbar = () => {
+const Toolbar = ({search , setSearch}) => {
+    const searchHandler = event => {
+        setSearch(event.target.value.toUpperCase());
+    }
     return (
         <div className={`d-flex justify-content-between align-items-center`}>
             <div className={`${styles.searchBox} m-2`}>
                 <div>
                     <label htmlFor="inp" className={styles.inp}>
-                    <input className={styles.search} type="text" id="inp" placeholder="&nbsp;"/>
+                    <input className={styles.search} type="text" id="inp" placeholder="&nbsp;" onChange={searchHandler} value={search}/>
                     <span className={styles.label}>دنبال چی می گردی؟</span>
                     <span className={styles.focusBg}></span>
                     </label>
